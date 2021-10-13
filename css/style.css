@@ -1,3 +1,238 @@
-body {
-  background-color: #ffffff;
+:root {
+  --header-color: #ffffff;
+  --main-color-text: #212121;
+  --second-color-text: #757575;
+  --accent-color: #2196f3;
+  --primary-title-color: #ffffff;
+  --second-title-color: #212121;
 }
+body {
+  font-family: "Roboto", sans-serif;
+}
+.body {
+  background-color: #ffffff;
+  color: #212121;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+.hidden{
+    visibility: hidden;
+}
+
+/* -------логотип-------*/
+.header-logo > .web {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+.header-logo > .studio {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+/*---------меню навигации-------*/
+.menu-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: #212121;
+}
+.menu-link:hover, 
+.menu-link:focus{
+    color: var(--accent-color);
+}
+
+.menu-email {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--second-color-text);
+}
+.menu-email:hover, .menu-email:focus{
+    color: var(--accent-color);
+}
+
+.menu-telephone {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--second-color-text);
+}
+.menu-telephone:hover, .menu-telephone:focus{
+    color: var(--accent-color);
+}
+
+/*----заголовок h1, + кнопка-----*/
+.seсtion-heading {
+  background-color: #2f303a;
+}
+.section-header{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: var(--primary-title-color)
+
+
+}
+.header-btn{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    background-color: var(--accent-color);
+    color:#ffffff
+    
+
+}
+
+/* ----------Особенности-------- */
+.hidden{
+    visibility: hidden;
+    display: none;
+}
+.main-text-list{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--main-color-text)
+}
+.maim-text-item{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: var(--second-color-text)
+}
+/* -------чем мы занимаемся-------- */
+.activity-title{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--main-color-text)
+}
+/* --------команда--------- */
+.team-title{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--main-color-text)
+
+}
+.team-subtitle{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--main-color-text)
+
+}
+.team-text{
+    
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--second-color-text)
+}
+/* --------фильтры портфолио */
+.btn{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    color: var(--main-color-text);
+}
+.projects-text{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+    color: var(--main-color-text)
+
+}
+.projects-item{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+
+    color: var(--second-color-text)
+}
+
+
+
+/* ---------подвал------- */
+.footer{
+    background-color: #2F303A;
+}
+.menu-contact .{
+    
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+}   
+    .menu-contact:hover,
+    .menu-contact:focus{
+        color: var(--accent-color) ;
+    }
+    
+.map{
+    color: #ffffff
+}
+
+
+
+
+
+  >; /*main color text #212121*/
+/*second color text #757575*/
+/*accent color #2196F3 */
+/*white color #FFFFFF*/
+/*вторичный цвет фона #2F303A*/
+/*цвет логотипа Web-#2196F3*/
+/*------------header-navigation----------*/
