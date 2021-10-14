@@ -5,13 +5,19 @@
   --accent-color: #2196f3;
   --primary-title-color: #ffffff;
   --second-title-color: #212121;
+  --current-color: #2196f3;
+  
 }
 body {
   font-family: "Roboto", sans-serif;
 }
 .body {
-  background-color: #ffffff;
-  color: #212121;
+    font-style: normal;
+    font-weight: normal;
+    color: var(--main-color-text);
+    background-color: var(--header-color)
+    
+    
 }
 .list {
   list-style: none;
@@ -21,6 +27,19 @@ body {
 }
 .hidden{
     visibility: hidden;
+}
+.studio-dark{
+    color: var(--main-color-text);
+}
+.studio-light{
+    color: var(--primary-title-color);
+}
+.list-menu{
+    color: var(--main-color-text);
+}
+
+.menu-link.current{
+    color: var(--current-color);
 }
 
 /* -------логотип-------*/
@@ -33,56 +52,43 @@ body {
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
-.header-logo > .studio {
+.header-logo > .studio-dark, .studio-light {
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #000000;
+  
 }
 /*---------меню навигации-------*/
-.menu-link {
+.menu-link,.contact-list  {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  color: #212121;
+  color:var(--main-color-text);
 }
 .menu-link:hover, 
 .menu-link:focus{
     color: var(--accent-color);
 }
+.contact-list{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 
-.menu-email {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
-  color: var(--second-color-text);
+    color:var(--second-color-text)
 }
-.menu-email:hover, .menu-email:focus{
-    color: var(--accent-color);
-}
-
-.menu-telephone {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
-  color: var(--second-color-text);
-}
-.menu-telephone:hover, .menu-telephone:focus{
+.contact-list:hover, .menu-email:focus{
     color: var(--accent-color);
 }
 
 /*----заголовок h1, + кнопка-----*/
 .seсtion-heading {
-  background-color: #2f303a;
+   background-color: #2f303a;
 }
 .section-header{
     font-weight: 900;
@@ -96,7 +102,7 @@ body {
 
 
 }
-.header-btn{
+.header-btn {
     font-weight: bold;
     font-size: 16px;
     line-height: 1.87;
@@ -105,11 +111,17 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
-    background-color: var(--accent-color);
-    color:#ffffff
-    
-
+    color:var(--main-color-text)
 }
+   
+.header-btn:hover, :focus{
+   color: var(--primary-title-color);
+   background-color: var(--accent-color);
+    
+}
+
+
+
 
 /* ----------Особенности-------- */
 .hidden{
@@ -182,7 +194,18 @@ body {
     letter-spacing: 0.03em;
     cursor: pointer;
     color: var(--main-color-text);
+    
 }
+   
+.btn:hover{
+    color: var(--primary-title-color);
+    background-color: var(--accent-color);
+    
+    
+}
+    
+
+
 .projects-text{
     font-weight: bold;
     font-size: 18px;
@@ -207,9 +230,12 @@ body {
 .footer{
     background-color: #2F303A;
 }
-.menu-contact .{
+.address{
+    font-style: normal;
+}
+.menu-contact {
     
-    font-weight: normal;
+    
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -222,14 +248,14 @@ body {
     }
     
 .map{
-    color: #ffffff
+    color: var(--primary-title-color)
 }
 
 
 
 
 
-  >; /*main color text #212121*/
+/*main color text #212121*/
 /*second color text #757575*/
 /*accent color #2196F3 */
 /*white color #FFFFFF*/
