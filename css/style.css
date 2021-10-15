@@ -9,6 +9,7 @@
   --button-hover: #188CE8;
   --studio-background-black: #2F303A;
   --footer-menu-contact : rgba(255, 255, 255, 0.6);
+  --studio-dark : #000000;
   
   
 }
@@ -31,14 +32,19 @@ body {
 }
 .visually-hidden {
     position: absolute;
-    clip: rect(0 0 0 0);
+    white-space: nowrap;
     width: 1px;
     height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
     margin: -1px;
     
 }
 .studio-dark{
-    color: var(--main-color-text);
+    color: var(--studio-dark);
 }
 .studio-light{
     color: var(--primary-title-color);
@@ -52,7 +58,7 @@ body {
 }
 
 /* -------логотип-------*/
-.header-logo > .studio-dark, .studio-light, .web {
+.header-logo, .web {
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -64,6 +70,7 @@ body {
 .web{
     color: var(--accent-color);
 }
+
 
 /*---------меню навигации-------*/
 .menu-link,.contact-list  {
