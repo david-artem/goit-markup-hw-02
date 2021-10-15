@@ -157,7 +157,7 @@ body {
     color: var(--second-color-text)
 }
 /* -------чем мы занимаемся-------- */
-.activity-title{
+.activity-title,.team-title{
     font-weight: bold;
     font-size: 36px;
     line-height: 1.16;
@@ -167,7 +167,7 @@ body {
     color: var(--main-color-text)
 }
 /* --------команда--------- */
-.team-title{
+
     font-weight: bold;
     font-size: 36px;
     line-height: 1.16;
