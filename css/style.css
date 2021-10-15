@@ -8,6 +8,7 @@
   --current-color: #2196f3;
   --button-hover: #188CE8;
   --studio-background-black: #2F303A;
+  --footer-menu-contact : rgba(255, 255, 255, 0.6);
   
   
 }
@@ -28,8 +29,13 @@ body {
 .link {
   text-decoration: none;
 }
-.hidden{
-    visibility: hidden;
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    
 }
 .studio-dark{
     color: var(--main-color-text);
@@ -71,19 +77,21 @@ body {
 .menu-link:hover, 
 .menu-link:focus{
     color: var(--accent-color);
-}
-.contact-list{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
-    color:var(--second-color-text)
-}
-.contact-list:hover, .menu-email:focus{
+    }
+.contact-list :hover{
+    background-color: var(--accent-color);
     color: var(--accent-color);
 }
-
+.contact-list :focus{
+    background-color: var(--accent-color);
+}   
+    
+.menu-email:focus,:hover{
+    color: var(--accent-color);
+    }
+.menu-email :hover{
+    background-color: var(--accent-color);
+}
 /*----заголовок h1, + кнопка-----*/
 .seсtion-heading {
    background-color: var(--studio-background-black);
@@ -113,7 +121,10 @@ body {
     
 }
    
-.header-btn:hover, 
+.header-btn:hover{
+    background-color: var(--button-hover);
+    color: var(--primary-title-color);
+}
 .header-btn:focus{
    color: var(--primary-title-color);
    background-color: var(--button-hover);
@@ -124,11 +135,10 @@ body {
 
 
 /* ----------Особенности-------- */
-.hidden{
-    visibility: hidden;
-    display: none;
-}
-.main-text-list{
+
+
+.main-text-list
+{
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
@@ -206,12 +216,6 @@ body {
 }
     
 
-    
-    
-
-    
-
-
 .projects-text{
     font-weight: bold;
     font-size: 18px;
@@ -234,7 +238,7 @@ body {
 
 /* ---------подвал------- */
 .footer{
-    background-color: #2F303A;
+    background-color: var(--studio-background-black)
 }
 .address{
     font-style: normal;
@@ -246,7 +250,7 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
 
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--footer-menu-contact);
 }   
     .menu-contact:hover,
     .menu-contact:focus{
