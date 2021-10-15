@@ -6,6 +6,9 @@
   --primary-title-color: #ffffff;
   --second-title-color: #212121;
   --current-color: #2196f3;
+  --button-hover: #188CE8;
+  --studio-background-black: #2F303A;
+  
   
 }
 body {
@@ -88,7 +91,7 @@ body {
 
 /*----заголовок h1, + кнопка-----*/
 .seсtion-heading {
-   background-color: #2f303a;
+   background-color: var(--studio-background-black);
 }
 .section-header{
     font-weight: 900;
@@ -97,7 +100,6 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
     color: var(--primary-title-color)
 
 
@@ -111,12 +113,15 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
-    color:var(--main-color-text)
+    color:var(--main-color-text);
+    background-color: var(--accent-color);
+    
 }
    
-.header-btn:hover, :focus{
+.header-btn:hover, 
+.header-btn:focus{
    color: var(--primary-title-color);
-   background-color: var(--accent-color);
+   background-color: var(--button-hover);
     
 }
 
@@ -193,16 +198,22 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     cursor: pointer;
-    color: var(--main-color-text);
+    color:var(--main-color-text);
+    background-color: var(--accent-color);
     
 }
    
-.btn:hover{
-    color: var(--primary-title-color);
-    background-color: var(--accent-color);
-    
+.btn:hover, 
+.btn:focus{
+   color: var(--primary-title-color);
+   background-color: var(--button-hover);
     
 }
+    
+
+    
+    
+
     
 
 
@@ -248,7 +259,9 @@ body {
     }
     
 .map{
+    text-decoration: none;
     color: var(--primary-title-color)
+    
 }
 
 
