@@ -10,6 +10,7 @@
   --studio-background-black: #2F303A;
   --footer-menu-contact : rgba(255, 255, 255, 0.6);
   --studio-dark : #000000;
+  --portfolio-button-background: #F5F4FA;
   
   
 }
@@ -191,7 +192,8 @@ body {
     letter-spacing: 0.03em;
     cursor: pointer;
     color:var(--main-color-text);
-    background-color: var(--accent-color);
+    background-color: var(--portfolio-button-background);
+    
     
 }
    
