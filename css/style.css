@@ -16,7 +16,7 @@
 body {
   font-family: "Roboto", sans-serif;
 }
-.body {
+body {
     font-style: normal;
     font-weight: normal;
     color: var(--main-color-text);
@@ -50,6 +50,10 @@ body {
 .menu-link.current{
     color: var(--current-color);
 }
+.header-button :hover,
+.header-button :focus{
+    background-color: red;
+}
 
 /* -------логотип-------*/
 .header-logo, .web {
@@ -79,14 +83,11 @@ body {
 .menu-link:focus{
     color: var(--accent-color);
     }
-.contact-list :hover{
+.contact-list :hover,
+.contact-list :focus{    
     background-color: var(--accent-color);
-    color: var(--accent-color);
-}
-.contact-list :focus{
-    background-color: var(--accent-color);
-}   
-    
+    color: var(--accent-color)
+}    
 .menu-email:focus,:hover{
     color: var(--accent-color);
     }
@@ -108,7 +109,7 @@ body {
 
 
 }
-.header-btn {
+.header-button {
     font-weight: bold;
     font-size: 16px;
     line-height: 1.87;
@@ -117,20 +118,16 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
-    color:var(--main-color-text);
-    background-color: var(--accent-color);
-    
-}
-   
-.header-btn:hover{
-    background-color: var(--button-hover);
     color: var(--primary-title-color);
+    background-color: var(--accent-color);
 }
-.header-btn:focus{
-   color: var(--primary-title-color);
-   background-color: var(--button-hover);
-    
+.header-button :hover{
+    background-color: red;
 }
+.header-button :focus{
+    background-color: red;
+}
+
 
 
 
@@ -168,15 +165,7 @@ body {
 }
 /* --------команда--------- */
 
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
 
-    color: var(--main-color-text)
-
-}
 .team-subtitle{
     font-weight: 500;
     font-size: 16px;
