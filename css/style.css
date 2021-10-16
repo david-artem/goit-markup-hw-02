@@ -50,10 +50,7 @@ body {
 .menu-link.current{
     color: var(--current-color);
 }
-.header-button :hover,
-.header-button :focus{
-    background-color: red;
-}
+
 
 /* -------логотип-------*/
 .header-logo, .web {
@@ -79,24 +76,27 @@ body {
 
   color:var(--main-color-text);
 }
+.contact-list{
+    color: var(--second-color-text);
+}
 .menu-link:hover, 
 .menu-link:focus{
     color: var(--accent-color);
     }
-.contact-list :hover,
-.contact-list :focus{    
-    background-color: var(--accent-color);
-    color: var(--accent-color)
+.contact-list:hover,
+.contact-list:focus{    
+    color: var(--accent-color);
+    
 }    
 .menu-email:focus,:hover{
     color: var(--accent-color);
     }
-.menu-email :hover{
+.menu-email:hover{
     background-color: var(--accent-color);
 }
 /*----заголовок h1, + кнопка-----*/
 .seсtion-heading {
-   background-color: var(--studio-background-black);
+   background-color :var(--studio-background-black);
 }
 .section-header{
     font-weight: 900;
@@ -121,15 +121,12 @@ body {
     color: var(--primary-title-color);
     background-color: var(--accent-color);
 }
-.header-button :hover{
-    background-color: red;
+.header-button:hover, 
+.header-button:focus{
+   color: var(--primary-title-color);
+   background-color:var(--button-hover);
 }
-.header-button :focus{
-    background-color: red;
-}
-
-
-
+    
 
 
 /* ----------Особенности-------- */
